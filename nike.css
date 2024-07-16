@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
-    overflow-x: hidden;
+    overflow: hidden;
     user-select: none;
 }
 #first {
@@ -65,6 +65,7 @@
 }
 .main > p:nth-child(1) {
     position: absolute;
+    z-index: 2;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -142,6 +143,7 @@
     top: 50%;
     left: 50%;
     position: absolute;
+    z-index: 3;
     height: 520px;
     width: 480px;
     transform: translate(-50%, -50%) rotate(-5deg);
@@ -218,8 +220,11 @@
     .logo{
         width: 30svw;
     }
+    .logo > img{
+        margin-left: 20px;
+    }
     .icons{
-        width: 30svw;
+        width: 60svw;
     }
     .headings{
         opacity: 0;
@@ -275,9 +280,29 @@
     .main > p:nth-child(1) {
         font-size: 180px;
     }
+    #title{
+        font-size: 35px;
+        text-align: center;
+    }
+    #info{
+        overflow-y: hidden;
+        line-height: 1.3rem;;
+        font-size: 15px;
+        font-weight: 900;
+    }
 }
 @media only screen and (max-width: 375px){
     .main > p:nth-child(1) {
         font-size: 150px;
+    }
+    #content{
+        justify-content: center;
+        gap: 20px;
+    }
+    #title{
+        text-align: center;
+    }
+    #info{
+        font-size: 12px;
     }
 }
