@@ -2,7 +2,7 @@
 <h3 align="center">Responsive | Animated | Visually attractive Shoe collection Landing Page (Hero Section), Utilized Document Object Model (DOM) efficiently that stuns like a Slider Component.</h3>
 
 ---
-
+ 
 ## 🎬 Website Demo
 
   <img src="./outputs/1.png" width="100%" />
